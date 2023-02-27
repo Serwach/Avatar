@@ -1,0 +1,15 @@
+<?php
+use Magento\Framework\Escaper;
+
+/** @var Escaper $escaper */
+?>
+<div class="field avatar required">
+    <label for="avatar"
+           class="label"><span><?= $escaper->escapeHtml(__('Avatar')) ?></span></label>
+    <div class="control">
+        <label for="avatar" class="custom-file-upload">
+            <?= $escaper->escapeHtml(__('Image upload')) ?>
+        </label>
+        <input type="file" id="avatar" name="avatar" class="validate-file" accept=".jpg, .jpeg, .png, .gif"/>
+    </div>
+</div>
